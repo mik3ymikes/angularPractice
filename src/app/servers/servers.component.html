@@ -1,4 +1,4 @@
-
+<!--
 
 <p>The server is {{serverStatus}}</p>
 
@@ -11,3 +11,13 @@
 <br>
 
 <button [disabled]="!serverOn">test</button>
+
+<button (click)="onCreateServer()">Make server</button>
+
+
+<p [innerText]="serverStatus"> </p> -->
+
+
+
+
+<button (click)="onUpdateServerName($event)">click me</button>

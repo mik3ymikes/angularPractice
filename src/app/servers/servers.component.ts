@@ -11,6 +11,8 @@ export class ServersComponent {
 
   serverStatus:string="offline"
   serverOn:boolean=false
+  server:string=""
+
 
 
 getServerStatus(){
@@ -19,6 +21,16 @@ getServerStatus(){
     this.serverOn=!this.serverOn
     return this.serverStatus
   }, 1000)
+
+  }
+
+  onCreateServer(){
+    this.server='server was created'
+
+  }
+
+
+  onUpdateServerName(event:any){
 
   }
 }
