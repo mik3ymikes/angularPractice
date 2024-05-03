@@ -10,15 +10,15 @@ import { Component } from '@angular/core';
 export class ServersComponent {
 
   serverStatus:string="offline"
-
+  serverOn:boolean=false
 
 
 getServerStatus(){
   setTimeout(() =>{
     this.serverStatus=this.serverStatus==="offline"?"online":"offline"
+    this.serverOn=!this.serverOn
     return this.serverStatus
-
-  }, 2000)
+  }, 1000)
 
   }
 }
