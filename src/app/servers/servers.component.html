@@ -1,1 +1,13 @@
-<p>servers works!</p>
+
+
+<p>The server is {{serverStatus}}</p>
+
+
+
+<button (click)="getServerStatus()">click me</button>
+
+{{serverStatus}}
+
+<br>
+
+<button [disabled]="!serverStatus">test</button>

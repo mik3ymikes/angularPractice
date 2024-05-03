@@ -9,4 +9,19 @@ import { Component } from '@angular/core';
 })
 export class ServersComponent {
 
+  serverStatus:string="offline"
+
+
+
+getServerStatus(){
+  setTimeout(() =>{
+    this.serverStatus=this.serverStatus==="offline"?"online":"offline"
+    return this.serverStatus
+
+  }, 2000)
+
+  }
 }
+
+
+
