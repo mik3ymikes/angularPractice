@@ -15,32 +15,14 @@ export class ServersComponent {
   server:string=""
 
 
-
-getServerStatus(){
-  setTimeout(() =>{
-    this.serverStatus=this.serverStatus==="offline"?"online":"offline"
-    this.serverOn=!this.serverOn
-    return this.serverStatus
-  }, 1000)
-
-  }
-
-  // onCreateServer(){
-  //   this.server='server was created'
-
-  // }
+username=''
 
 
-  onUpdateServerName(event:any){
- this.server=event.target.value
-  }
 
+reset(){
+  this.username=''
+}
 
-  create(){
-  // this.server="server was created"
-
-
-  }
 
 }
 

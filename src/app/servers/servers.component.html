@@ -1,29 +1,8 @@
-<!--
+<!-- <form action=""> -->
+  <label for="">What is you username</label>
+  <input type="text" [(ngModel)]="username">
+  <button [disabled]="!username" (click)="reset()">select</button>
+  <br>
+<!-- </form> -->
+<p>your username is {{username}} </p>
 
-<p>The server is {{serverStatus}}</p>
-
-
-
-<button (click)="getServerStatus()">click me</button>
-
-{{serverStatus}}
-
-<br>
-
-<button [disabled]="!serverOn">test</button>
-
-<button (click)="onCreateServer()">Make server</button>
-
-
-<p [innerText]="serverStatus"> </p> -->
-
-
-<label for="">Server name</label>
-<input
-class="form-control"
-
-[(ngModel)]="server">
-
-<button (click)="create()">click me</button>
-
-<p>{{server}}</p>
