@@ -18,6 +18,12 @@
 <p [innerText]="serverStatus"> </p> -->
 
 
+<label for="">Server name</label>
+<input
+class="form-control"
 
+[(ngModel)]="server">
 
-<button (click)="onUpdateServerName($event)">click me</button>
+<button (click)="create()">click me</button>
+
+<p>{{server}}</p>

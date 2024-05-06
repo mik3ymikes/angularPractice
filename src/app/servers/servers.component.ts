@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-servers',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './servers.component.html',
   styleUrl: './servers.component.css'
 })
@@ -24,15 +25,23 @@ getServerStatus(){
 
   }
 
-  onCreateServer(){
-    this.server='server was created'
+  // onCreateServer(){
+  //   this.server='server was created'
 
-  }
+  // }
 
 
   onUpdateServerName(event:any){
+ this.server=event.target.value
+  }
+
+
+  create(){
+  // this.server="server was created"
+
 
   }
+
 }
 
 
