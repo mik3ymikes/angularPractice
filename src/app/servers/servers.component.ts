@@ -10,18 +10,18 @@ import { FormsModule } from '@angular/forms';
 })
 export class ServersComponent {
 
-  serverStatus:string="offline"
-  serverOn:boolean=false
-  server:string=""
+//   serverStatus:string="offline"
+//   serverOn:boolean=false
+//   server:string=""
 
 
-username=''
+// username=''
 
 
 
-reset(){
-  this.username=''
-}
+// reset(){
+//   this.username=''
+// }
 
 
 }
