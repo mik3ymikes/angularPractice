@@ -23,7 +23,15 @@ export class ServersComponent {
 //   this.username=''
 // }
 
+hide=true
 
+
+
+display(){
+this.hide=!this.hide
+console.log(this.hide)
+
+}
 
 
 
