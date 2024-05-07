@@ -10,3 +10,7 @@
 
  <button (click)="display()">Display Details</button>
  <p [hidden]="hide">Secret passwrod="chopsticks"</p>
+
+ @for(item of buttonClicks; track item.id ){
+       {{item}}
+ }

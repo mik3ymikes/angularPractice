@@ -9,6 +9,8 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './servers.component.css'
 })
 export class ServersComponent {
+  buttonClicks:any=[]
+  count=0
 
 //   serverStatus:string="offline"
 //   serverOn:boolean=false
@@ -29,7 +31,8 @@ hide=true
 
 display(){
 this.hide=!this.hide
-console.log(this.hide)
+this.count++
+this.buttonClicks.push(this.count)
 
 }
 
