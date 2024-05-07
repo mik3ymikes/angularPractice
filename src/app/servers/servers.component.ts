@@ -26,24 +26,55 @@ export class ServersComponent {
 //   this.username=''
 // }
 
-hide=true
+// hide=true
 
 
 
-display(){
-this.hide=!this.hide
-this.count++
-this.buttonClicks.push(this.count)
+// display(){
+// this.hide=!this.hide
+// this.count++
+// this.buttonClicks.push(this.count)
 
-}
-
-
-getColor(){
- return this.count>5 ? 'white':'black'
+// }
 
 
+// getColor(){
+//  return this.count>5 ? 'white':'black'
 
-}
+
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
