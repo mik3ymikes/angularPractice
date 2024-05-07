@@ -8,9 +8,14 @@
  -->
 
 
- <button (click)="display()">Display Details</button>
  <p [hidden]="hide">Secret passwrod="chopsticks"</p>
+ <button (click)="display()">Display Details</button>
+
+
 
  @for(item of buttonClicks; track item.id ){
-       {{item}}
- }
+     <div class="con" [ngStyle]="{backgroundColor: getColor(), color: getColor()}">
+     {{item}}
+    </div>
+    }
+
