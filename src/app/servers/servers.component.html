@@ -23,3 +23,10 @@
 
 
     <h1>balh</h1>
+    <button (click)="display()">Display Details</button>
+
+    @for(item of buttonClicks; track item.id ){
+      <div class="con">
+      {{item}}
+     </div>
+    }

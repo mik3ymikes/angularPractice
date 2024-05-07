@@ -1,5 +1,5 @@
 import { NgStyle } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -11,7 +11,8 @@ import { FormsModule } from '@angular/forms';
 })
 export class ServersComponent {
   buttonClicks:any=[]
-  count=0
+  @Input() count=0
+
 
 //   serverStatus:string="offline"
 //   serverOn:boolean=false
@@ -30,12 +31,11 @@ export class ServersComponent {
 
 
 
-// display(){
-// this.hide=!this.hide
-// this.count++
-// this.buttonClicks.push(this.count)
+display(){
+this.count++
+this.buttonClicks.push(this.count)
 
-// }
+}
 
 
 // getColor(){
