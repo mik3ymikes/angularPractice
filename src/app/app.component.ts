@@ -13,17 +13,14 @@ import { Servers2Component } from './servers2/servers2.component';
 })
 export class AppComponent {
   title = 'angularPractice';
-  counted: number;
+  counted:number=0
 
-  constructor() {
-      this.counted = 0; // Initialize it to some default value
 
-      if(this.counted==1){
-        alert("hello")
-      }
-    }
+
 
 
 
 }
 // mopre practice
+
+
