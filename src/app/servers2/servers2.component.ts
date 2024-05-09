@@ -10,6 +10,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class Servers2Component {
 
   @Output() clickz=new EventEmitter<void>()
+  @Output() datapass:string="hello"
 
 
 clock():void{

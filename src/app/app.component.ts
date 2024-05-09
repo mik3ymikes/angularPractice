@@ -18,7 +18,9 @@ export class AppComponent {
 
 
 
-
+clock(){
+  console.log("hey")
+}
 
 
 }
