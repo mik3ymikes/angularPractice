@@ -1,10 +1,9 @@
 <div class="main-con">
-  <app-servers [count]="counted">
+  <app-servers>
   </app-servers>
-  <app-servers2></app-servers2>
+  <app-servers2 (clickz)="clock()" ></app-servers2>
 
 </div>
-@if(this.counted>=2){
+<!-- @if(this.counted>=2){
   <h2>blkfdafd</h2>
-}
-
+} -->

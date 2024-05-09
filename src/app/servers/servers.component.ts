@@ -11,7 +11,8 @@ import { FormsModule } from '@angular/forms';
 })
 export class ServersComponent {
   buttonClicks:any=[]
-  @Input() count=0
+  @Input() counts=0
+  count=0
 
 
 //   serverStatus:string="offline"

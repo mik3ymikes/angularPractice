@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-servers2',
@@ -8,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './servers2.component.css'
 })
 export class Servers2Component {
+
+  @Output() clickz=new EventEmitter<void>()
+
+
+clock():void{
+  this.clickz.emit()
+}
 
 }

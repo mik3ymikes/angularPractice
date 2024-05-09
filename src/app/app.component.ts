@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { ServersComponent } from './servers/servers.component';
 import { FormsModule } from '@angular/forms';
 import { Servers2Component } from './servers2/servers2.component';
+import { count } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,7 @@ import { Servers2Component } from './servers2/servers2.component';
 })
 export class AppComponent {
   title = 'angularPractice';
-  counted:number=0
+  counted:number=10
 
 
 
