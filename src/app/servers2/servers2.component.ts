@@ -10,6 +10,19 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 })
 export class Servers2Component {
 
+  formData:any=[]
 
+
+
+
+
+
+
+finish(){
+  this. formData.push({
+   name:this.newName,
+
+  })
+}
 
 }
