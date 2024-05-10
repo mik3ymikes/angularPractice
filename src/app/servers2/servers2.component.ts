@@ -14,15 +14,20 @@ export class Servers2Component {
   newAge: number = 0; // Initialize newAge
   formData: { name: string, age: number }[] = [];
 
-  finish() {
+  // finish() {
+  //   // Push name and age into formData array
+  //   this.formData.push({
+  //     name: this.newName,
+  //     age: this.newAge
+  //   });
+  // }
+
+  finish(newName:any, newAge:any) {
     // Push name and age into formData array
-    this.formData.push({
-      name: this.newName,
-      age: this.newAge
-    });
+    alert(newName.value)
+    alert(newAge.value)
+
   }
-
-
 
 
 
