@@ -13,3 +13,23 @@
   {{item.name}}
   {{item.age}}
  } -->
+
+
+
+
+
+ <label for="name">What is name</label>
+<input type="text" id="name" #newName>
+<br>
+
+<label for="age">What is age</label>
+<input type="text" id="age" #newAge>
+<br>
+
+ <button (click)="finish()">click me</button>
+
+
+ @for(item of formData; track item){
+  {{item.name}}
+  {{item.age}}
+ }

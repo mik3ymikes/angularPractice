@@ -10,19 +10,17 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 })
 export class Servers2Component {
 
-  // newName: string = ''; // Initialize newName
-  // newAge: number = 0; // Initialize newAge
-  // formData: { name: string, age: number }[] = [];
+  newName: string = ''; // Initialize newName
+  newAge: number = 0; // Initialize newAge
+  formData: { name: string, age: number }[] = [];
 
-  // finish() {
-  //   // Push name and age into formData array
-  //   this.formData.push({
-  //     name: this.newName,
-  //     age: this.newAge
-  //   });
-  // }
-
-
+  finish() {
+    // Push name and age into formData array
+    this.formData.push({
+      name: this.newName,
+      age: this.newAge
+    });
+  }
 
 
 
@@ -33,6 +31,8 @@ export class Servers2Component {
 
 
 
-  
+
+
+
 
 }
