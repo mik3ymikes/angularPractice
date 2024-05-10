@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './game-control.component.css'
 })
 export class GameControlComponent {
+  number=0
 
 }
