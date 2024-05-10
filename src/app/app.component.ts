@@ -5,12 +5,17 @@ import { FormsModule } from '@angular/forms';
 import { Servers2Component } from './servers2/servers2.component';
 import { count } from 'rxjs';
 import { Servers3Component } from './servers3/servers3.component';
+import { GameControlComponent } from './game-control/game-control.component';
+import { OddComponent } from './odd/odd.component';
+import { EvenComponent } from './even/even.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, ServersComponent,
-    FormsModule, Servers2Component, Servers3Component],
+    FormsModule, Servers2Component,
+    Servers3Component, GameControlComponent,
+    OddComponent, EvenComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
