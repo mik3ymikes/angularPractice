@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { OddComponent } from '../odd/odd.component';
+import { EvenComponent } from '../even/even.component';
 
 @Component({
   selector: 'app-game-control',
   standalone: true,
-  imports: [],
+  imports: [OddComponent,EvenComponent],
   templateUrl: './game-control.component.html',
   styleUrl: './game-control.component.css'
 })
