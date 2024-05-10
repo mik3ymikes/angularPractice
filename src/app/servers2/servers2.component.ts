@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output} from '@angular/core';
+import { Component, EventEmitter, Output, ViewChild} from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
@@ -10,8 +10,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 })
 export class Servers2Component {
 
-  newName: string = ''; // Initialize newName
+  // newName: string = ''; // Initialize newName
   newAge: number = 0; // Initialize newAge
+  @ViewChild('newName') newName: any
   formData: { name: string, age: number }[] = [];
 
   // finish() {
@@ -23,10 +24,8 @@ export class Servers2Component {
   // }
 
   finish(newName:any, newAge:any) {
-    // Push name and age into formData array
-    alert(newName.value)
-    alert(newAge.value)
 
+    alert(this.newName.nativeElement.value)
   }
 
 
