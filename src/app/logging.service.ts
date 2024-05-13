@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class LoggingService {
-  logStatusChage(status:string){
+  logStatusChage(){
     console.log('a server changed')
   }
 

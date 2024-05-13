@@ -15,6 +15,7 @@ export class TestyComponent implements OnInit {
   constructor(private loggingService:LoggingService){}
 
   ngOnInit(): void {
+    this.loggingService.logStatusChage()
 
   }
 
