@@ -8,6 +8,7 @@ import { Servers3Component } from './servers3/servers3.component';
 import { GameControlComponent } from './game-control/game-control.component';
 import { OddComponent } from './odd/odd.component';
 import { EvenComponent } from './even/even.component';
+import { TestyComponent } from './testy/testy.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,7 @@ import { EvenComponent } from './even/even.component';
   imports: [RouterOutlet, ServersComponent,
     FormsModule, Servers2Component,
     Servers3Component, GameControlComponent,
-    OddComponent, EvenComponent],
+    OddComponent, EvenComponent, TestyComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
