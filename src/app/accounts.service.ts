@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Account } from './testy/account';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -35,8 +36,8 @@ addAccount(newAccount: { name: string, password: string }) {
 }
 
 
-viewAccounts(){
- return this.accounts
+viewAccounts(): Observable <Account[]> {
+ return of (this.accounts)
 }
 
 
