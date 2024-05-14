@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class LoggingService {
   logStatusChage(){
-    console.log('a server changed')
+    console.log('a server changedf')
   }
 
   constructor() { }
