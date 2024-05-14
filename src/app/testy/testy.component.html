@@ -1,4 +1,19 @@
-@for(account of allAccounts; track account){
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Password</th>
+    </tr>
+  </thead>
+  <tbody>
 
-   
-}
+    @for(account of allAccounts; track account){
+      <tr>
+        <td>{{ account.name }}</td>
+        <td>{{ account.password }}</td>
+      </tr>
+
+    }
+
+  </tbody>
+  </table>

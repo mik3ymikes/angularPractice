@@ -11,7 +11,7 @@ import { Account } from './account';
   styleUrl: './testy.component.css'
 })
 export class TestyComponent implements OnInit {
- allAccounts=[]
+ allAccounts :Account[]=[]
 
 
 
@@ -30,7 +30,7 @@ export class TestyComponent implements OnInit {
   accountsload():void {
     this.accountService.viewAccounts().subscribe({
       next: (accounts:any) =>{
-   
+
         this.allAccounts=accounts
       },
       error: (error) =>{
