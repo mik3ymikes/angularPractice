@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LoggingService } from '../logging.service';
+import { Account } from './account';
 
 @Component({
   selector: 'app-testy',
@@ -10,8 +11,7 @@ import { LoggingService } from '../logging.service';
 })
 export class TestyComponent implements OnInit {
 
-
-  accounts=[ {
+  accounts:Account[]=[ {
     name:"blah",
     password:"rah"
   },
