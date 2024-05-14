@@ -30,7 +30,7 @@ export class TestyComponent implements OnInit {
   accountsload():void {
     this.accountService.viewAccounts().subscribe({
       next: (accounts:any) =>{
-        alert("accounts recieved")
+   
         this.allAccounts=accounts
       },
       error: (error) =>{
