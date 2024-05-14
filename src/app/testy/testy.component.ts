@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LoggingService } from '../logging.service';
-import { Account } from './account';
+import { AccountsService } from '../accounts.service';
 
 @Component({
   selector: 'app-testy',
@@ -10,30 +10,17 @@ import { Account } from './account';
   styleUrl: './testy.component.css'
 })
 export class TestyComponent implements OnInit {
-
-  accounts:Account[]=[ {
-    name:"blah",
-    password:"rah"
-  },
-  {
-    name:"mike",
-    password:"miere"
-  },
-  {
-    name:"nick",
-    password:"mnidsfdfafdfas"
-  },
-  {
-    name:"josh",
-    password:"zelda"
-  }
-]
+ allAccounts=[]
 
 
-  constructor(private loggingService:LoggingService){}
+
+  constructor(private loggingService:LoggingService,
+    private accountService:AccountsService
+  ){}
 
   ngOnInit(): void {
     this.loggingService.logStatusChage()
+    
 
   }
 
