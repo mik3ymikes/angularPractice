@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LoggingService } from '../logging.service';
 import { AccountsService } from '../accounts.service';
+import { Account } from './account';
 
 @Component({
   selector: 'app-testy',
@@ -20,8 +21,22 @@ export class TestyComponent implements OnInit {
 
   ngOnInit(): void {
     this.loggingService.logStatusChage()
-    
+    this. accountsload()
 
+
+  }
+
+
+  accountsload():void {
+    this.accountService.viewAccounts().subscribe({
+      next: (accounts:any) =>{
+        alert("accounts recieved")
+        this.allAccounts=accounts
+      },
+      error: (error) =>{
+        console.error(error)
+      }
+    })
   }
 
 }

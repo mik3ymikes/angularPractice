@@ -35,4 +35,9 @@ addAccount(newAccount: { name: string, password: string }) {
 }
 
 
+viewAccounts(){
+ return this.accounts
+}
+
+
 }
