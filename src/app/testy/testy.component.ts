@@ -11,6 +11,24 @@ import { LoggingService } from '../logging.service';
 export class TestyComponent implements OnInit {
 
 
+  accounts=[ {
+    name:"blah",
+    password:"rah"
+  },
+  {
+    name:"mike",
+    password:"miere"
+  },
+  {
+    name:"nick",
+    password:"mnidsfdfafdfas"
+  },
+  {
+    name:"josh",
+    password:"zelda"
+  }
+]
+
 
   constructor(private loggingService:LoggingService){}
 
