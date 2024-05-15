@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 import { Account } from './testy/account';
 import { Observable, of } from 'rxjs';
 
@@ -6,7 +6,7 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class AccountsService {
-
+accountsChanged=new EventEmitter<Account[]>()
 
   constructor() { }
 
@@ -37,6 +37,7 @@ addAccount(newAccount: { name: string, password: string }) {
 
 
 viewAccounts(): Observable <Account[]> {
+  // return of (this.accountsChanged.emit(this.accounts.slice()))
  return of (this.accounts)
 }
 
