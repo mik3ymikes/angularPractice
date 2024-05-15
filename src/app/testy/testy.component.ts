@@ -25,7 +25,7 @@ export class TestyComponent implements OnInit {
 
 
   }
-//more prac
+
 
   accountsload():void {
     this.accountService.viewAccounts().subscribe({

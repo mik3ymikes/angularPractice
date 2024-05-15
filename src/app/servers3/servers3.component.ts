@@ -9,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class Servers3Component {
 
+
+
+  submitForm(name:string, password:string){
+
+  }
+
 }
