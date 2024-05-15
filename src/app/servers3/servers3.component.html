@@ -1,8 +1,8 @@
 
-  <label for="name">name</label>
- <input type="name">
+<label for="name">What is name</label>
+<input type="text" id="name" #name>
  <br>
  <label for="password">password</label>
-<input type="password">
+<input type="password" id="password" #password>
 <br>
-<button (click)="submitForm(name, password)">submit</button>
+<button (click)="submitForm(name.value, password.value)">submit</button>
