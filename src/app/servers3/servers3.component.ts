@@ -11,12 +11,13 @@ import { AccountsService } from '../accounts.service';
 export class Servers3Component implements OnInit {
 
   constructor(private accountService:AccountsService){}
-  
+
 ngOnInit(): void {
 
 }
 
   submitForm(name:string, password:string){
+    this.accountService.addAccount({ name, password });
 
   }
 
