@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { AccountsService } from '../accounts.service';
+import { TestyComponent } from '../testy/testy.component';
 
 @Component({
   selector: 'app-servers3',
   standalone: true,
-  imports: [],
+  imports: [TestyComponent],
   templateUrl: './servers3.component.html',
   styleUrl: './servers3.component.css'
 })

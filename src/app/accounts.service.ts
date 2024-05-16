@@ -37,7 +37,6 @@ addAccount(newAccount: { name: string, password: string }) {
 
 
 viewAccounts(): Observable <Account[]> {
-  //more practe
   // return of (this.accountsChanged.emit(this.accounts.slice()))
  return of (this.accounts)
 }
