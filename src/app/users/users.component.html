@@ -1,9 +1,15 @@
 
 @for(user of users; track user){
-  <div class="blah">
+  <a [routerLink]="['/users', user.name, user.password]" >
 
-    {{user.name}}
-    {{user.password}}
-  </div>
+    <div class="blah">
+
+      {{user.name}}
+      {{user.password}}
+    </div>
+  </a>
 
 }
+
+
+<!-- <app-user></app-user> -->

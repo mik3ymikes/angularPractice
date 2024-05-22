@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { UserComponent } from '../user/user.component';
+
 
 @Component({
   selector: 'app-users',
   standalone: true,
-  imports: [],
+  imports: [RouterLink, UserComponent],
   templateUrl: './users.component.html',
   styleUrl: './users.component.css'
 })

@@ -8,4 +8,5 @@ export const routes: Routes = [
   {path: 'server', component:Servers3Component},
   {path: 'users', component:UsersComponent},
   {path: 'users/:name/:password', component:UserComponent}
+  // {path: 'users/:name/:password', component:UsersComponent}
 ];
