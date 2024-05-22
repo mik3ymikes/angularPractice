@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-users',
@@ -7,6 +7,33 @@ import { Component } from '@angular/core';
   templateUrl: './users.component.html',
   styleUrl: './users.component.css'
 })
-export class UsersComponent {
+export class UsersComponent implements OnInit {
+
+constructor(){}
+
+ngOnInit(): void {
+
+}
+
+
+  users:any[]=[ {
+    name:"april",
+    password:"sfdds"
+
+  },
+  {
+    name:"mike",
+    password:"miere"
+  },
+  {
+    name:"nick",
+    password:"mnidsfdfafdfas"
+  },
+  {
+    name:"josh",
+    password:"zelda"
+  }
+]
+
 
 }
