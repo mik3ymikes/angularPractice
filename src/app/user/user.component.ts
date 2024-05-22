@@ -11,7 +11,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 export class UserComponent implements OnInit {
 
 
-  @Input() user: { name: string; password: string; } | undefined;
+  user: { name: string; password: string; } | undefined;
 
 constructor(private route:ActivatedRoute){}
 
