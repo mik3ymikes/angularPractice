@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-user',
@@ -19,6 +19,15 @@ constructor(private route:ActivatedRoute){}
       name: this.route.snapshot.params['name'],
       password:this.route.snapshot.params['password']
     }
+    this.route.params.
+    subscribe(
+        (params:Params)=>{
+          if(this.user){
+          this.user.name=params['name'];
+          this.user.password=params['password']
+        }
+      }
+    )
   }
 
 }
