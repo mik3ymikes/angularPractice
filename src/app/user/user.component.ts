@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
@@ -10,7 +10,8 @@ import { ActivatedRoute, Params } from '@angular/router';
 })
 export class UserComponent implements OnInit {
 
-  user: { name: string; password: string; } | undefined;
+
+  @Input() user: { name: string; password: string; } | undefined;
 
 constructor(private route:ActivatedRoute){}
 

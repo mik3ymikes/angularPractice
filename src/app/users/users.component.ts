@@ -2,41 +2,27 @@ import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { UserComponent } from '../user/user.component';
 
-
 @Component({
   selector: 'app-users',
   standalone: true,
   imports: [RouterLink, UserComponent],
   templateUrl: './users.component.html',
-  styleUrl: './users.component.css'
+  styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
 
-constructor(){}
+  users: any[] = [
+    { name: "april", password: "sfdds" },
+    { name: "mike", password: "miere" },
+    { name: "nick", password: "mnidsfdfafdfas" },
+    { name: "josh", password: "zelda" }
+  ];
 
-ngOnInit(): void {
-
-}
 
 
-  users:any[]=[ {
-    name:"april",
-    password:"sfdds"
+  constructor() {}
 
-  },
-  {
-    name:"mike",
-    password:"miere"
-  },
-  {
-    name:"nick",
-    password:"mnidsfdfafdfas"
-  },
-  {
-    name:"josh",
-    password:"zelda"
-  }
-]
+  ngOnInit(): void {}
 
 
 }
