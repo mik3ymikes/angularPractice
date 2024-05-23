@@ -26,9 +26,9 @@ constructor(private route:ActivatedRoute){}
           if(this.user){
           this.user.name=params['name'];
           this.user.password=params['password']
-        } 
+        }
       }
     )
   }
-
+//group project
 }
