@@ -7,6 +7,6 @@ export class LoggingService {
   logStatusChage(){
     console.log('a server changedf')
   }
-
+//studying params
   constructor() { }
 }
